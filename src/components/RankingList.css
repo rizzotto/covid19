@@ -1,0 +1,130 @@
+.c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TIRAR MARGEM DA LISTA QUANDO FOR MENOR A TELA */
+
+.blueTable {
+    /* border: 0px solid #1C6EA4; */
+    text-align: left;
+    border-collapse: collapse;
+    overflow-y: scroll;
+    height: 31rem;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    border: 1px solid #dbe9f5;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px 0 rgba(31,70,88,.04);   
+    /* margin-right: 1%; */
+    width: 80%;
+    
+  }
+  .blueTable td {
+    border-bottom: 1px solid #dbe9f5;
+    border-right: 1px solid #dbe9f5;
+    /* border-radius: 2px; */
+    /* box-shadow: 0 4px 6px 0 rgba(31,70,88,.04);  */
+    padding: 3%;
+    /* width: 80%; */
+    /* width: 100%; */
+  }
+  .blueTable tbody td {
+    font-size: 1rem;
+    color: #000000;
+    /* width: 80%; */
+    /* width: 100%; */
+  }
+  .blueTable tr:nth-child(even) {
+    background: #FFFFFF;
+  }
+  .blueTable td:nth-child(even) {
+    background: #FFFFFF;
+  }
+
+  .blueTable thead th {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6370FF;
+    padding: 2%;
+    border-bottom: 1px solid #dbe9f5;
+    border-right: 1px solid #dbe9f5;
+    /* width: 80%; */
+  }
+
+  table {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1050px){
+    .blueTable {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .c {
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+
+    .blueTable thead th {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #6370FF;
+      padding: 2%;
+      border-bottom: 1px solid #dbe9f5;
+      border-right: 1px solid #dbe9f5;
+      /* width: 80%; */
+    }
+
+    .blueTable tbody td {
+      font-size: 0.9rem;
+      color: #000000;
+      /* width: 80%; */
+      /* width: 100%; */
+    }
+    
+}
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    border-radius: 4px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+
+  .text-asc {
+    font-size: 0.8rem;
+    cursor: grab;
+    margin-right: 0.5rem;
+  }
+  
+  .text-desc {
+    font-size: 0.8rem;
+    cursor: grab;
+    margin-left: 0.5rem;
+  }
+
+  .sort-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
