@@ -22,7 +22,6 @@ export default function TotalStats() {
     const cases = data.data.data.confirmed;
     const deaths = data.data.data.deaths;
     const updatedAt = data.data.data.updated_at;
-    const recovered = data.data.data.recovered;
     let d = new Date(updatedAt);
     let up =
       d.getDate() +
@@ -36,7 +35,6 @@ export default function TotalStats() {
 
     setCountryCase(numberWithCommas(cases));
     setCountryDeath(numberWithCommas(deaths));
-    setCountryRecovered(numberWithCommas(recovered));
     setUpdated(up);
   }
 
