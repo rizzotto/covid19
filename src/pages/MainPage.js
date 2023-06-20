@@ -60,7 +60,7 @@ export default function MainPage() {
             <DoughnutChart chartData={doughnutData} legendPosition="bottom" />
           )}
         </div>
-          <MiddleList />
+          {/* <MiddleList /> */}
         <div className="box">
           <ListTweets />
         </div>

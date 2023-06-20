@@ -64,7 +64,7 @@ export default function TotalStats() {
         <div className="box">
           <p className="containerFont">Total de Recuperados</p>
           <p>
-            <strong className="strongLetal">{countryRecovered}</strong>
+            <strong className="strongLetal">649.000</strong>
           </p>
         </div>
       </div>
